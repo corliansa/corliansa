@@ -9,11 +9,11 @@ type Repo = {
 	updated_at: string;
 };
 
-type HomeProps = {
+type CardProps = {
 	data: Repo;
 };
 
-const Card: NextPage<HomeProps> = ({ data }) => {
+const Card: NextPage<CardProps> = ({ data }) => {
 	return (
 		<div className={styles.card}>
 			<h2 className={styles.title}>

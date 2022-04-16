@@ -1,6 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 
@@ -40,23 +39,12 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 			<main className={styles.main}>
 				<h1 className={styles.subtitle}>Repos</h1>
 
-				{/* <Card title="Hello" description="bla" link="./" /> */}
 				<div className="repos">
 					{data?.map((repo: Repo) => (
 						<Card key={repo.name} data={repo} />
 					))}
 				</div>
 			</main>
-
-			<footer className={styles.footer}>
-				<a
-					href="https://linkedin.com/in/corliansa"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Copyright © {new Date().getFullYear()} Corliansa Kusumah
-				</a>
-			</footer>
 		</div>
 	);
 };
