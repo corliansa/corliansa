@@ -1,5 +1,5 @@
-import type { NextPage } from "next";
-import styles from "../styles/Card.module.css";
+import styles from "../styles/RepoCard.module.css";
+import { GoLaw, GoPrimitiveDot } from "react-icons/go";
 
 type Repo = {
 	name: string;
@@ -13,7 +13,7 @@ type CardProps = {
 	data: Repo;
 };
 
-const Card: NextPage<CardProps> = ({ data }) => {
+const RepoCard: React.VFC<CardProps> = ({ data }) => {
 	return (
 		<div className={styles.card}>
 			<h2 className={styles.title}>
@@ -24,9 +24,17 @@ const Card: NextPage<CardProps> = ({ data }) => {
 			<p>{data.description}</p>
 			<hr />
 			<div className={styles.info}>
-				{data.language && <span> Language: {data.language}, </span>}
+				{data.language && (
+					<span>
+						{" "}
+						<GoPrimitiveDot size={12} /> {data.language},{" "}
+					</span>
+				)}
 				{data.license?.spdx_id && (
-					<span> License: {data.license?.spdx_id}, </span>
+					<span>
+						{" "}
+						<GoLaw size={12} /> {data.license?.spdx_id} License,{" "}
+					</span>
 				)}
 				<span>
 					Updated on{" "}
@@ -39,4 +47,4 @@ const Card: NextPage<CardProps> = ({ data }) => {
 	);
 };
 
-export default Card;
+export default RepoCard;
