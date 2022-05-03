@@ -13,7 +13,7 @@ type CardProps = {
 	data: Repo;
 };
 
-const RepoCard: React.VFC<CardProps> = ({ data }) => {
+const RepoCard: React.FC<CardProps> = ({ data }) => {
 	return (
 		<div className={styles.card}>
 			<h2 className={styles.title}>

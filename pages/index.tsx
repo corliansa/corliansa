@@ -17,6 +17,13 @@ type HomeProps = {
 	data: Repo[];
 };
 
+type Tech = {
+	name: string;
+	description?: string;
+	image?: string;
+	url?: string;
+};
+
 const Home: NextPage<HomeProps> = ({ data }) => {
 	return (
 		<div className={styles.container}>
@@ -51,15 +58,15 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 
 				<div className={styles.stacks}>
 					{[
-						"React Native",
-						"React",
-						"Next.js",
-						"TypeScript",
-						"Node.js",
-						"Express",
-						"MongoDB",
-					].map((tech: any) => (
-						<TechCard key={tech} data={{ name: tech }} />
+						{ name: "React Native" },
+						{ name: "React" },
+						{ name: "Next.js" },
+						{ name: "TypeScript" },
+						{ name: "Node.js" },
+						{ name: "Express" },
+						{ name: "MongoDB" },
+					].map((tech: Tech) => (
+						<TechCard key={tech.name} data={tech} />
 					))}
 				</div>
 			</main>
@@ -96,7 +103,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 						- A simple note taking app powered by Markdown and KaTeX",
 							url: "https://dl.corliansa.xyz/Simplinotes/",
 						},
-					].map((tech: any) => (
+					].map((tech: Tech) => (
 						<TechCard key={tech.name} data={tech} />
 					))}
 				</div>

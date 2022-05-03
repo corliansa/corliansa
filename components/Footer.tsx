@@ -1,7 +1,6 @@
-import type { NextPage } from "next";
 import styles from "../styles/Footer.module.css";
 
-const Card: React.VFC = () => {
+const Card: React.FC = () => {
 	return (
 		<footer className={styles.footer}>
 			<a

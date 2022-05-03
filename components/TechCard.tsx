@@ -11,7 +11,7 @@ type CardProps = {
 	data: Tech;
 };
 
-const TechCard: React.VFC<CardProps> = ({ data }) => {
+const TechCard: React.FC<CardProps> = ({ data }) => {
 	return (
 		<div className={styles.card}>
 			<h2 className={styles.title}>
