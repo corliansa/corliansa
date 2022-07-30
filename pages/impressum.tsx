@@ -31,7 +31,7 @@ const Impressum: NextPage = () => {
 				<p>
 					Telefon: +49 (0) 17674670823
 					<br />
-					E-Mail: corliansa+website@icloud.com
+					E-Mail: me@corliansa.xyz
 				</p>
 			</main>
 		</div>

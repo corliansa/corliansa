@@ -113,8 +113,7 @@ const TOS: NextPage = () => {
 				</p>
 				<p>
 					If you have any questions or suggestions about my Terms and
-					Conditions, do not hesitate to contact me at
-					corliansa+website@icloud.com.
+					Conditions, do not hesitate to contact me at me@corliansa.xyz.
 				</p>
 			</main>
 		</div>

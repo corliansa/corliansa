@@ -195,7 +195,7 @@ const Privacy: NextPage = () => {
 				<p>
 					Corliansa Kusumah
 					<br />
-					corliansa+website@icloud.com{" "}
+					me@corliansa.xyz{" "}
 				</p>
 			</main>
 		</div>

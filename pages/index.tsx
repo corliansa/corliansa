@@ -44,7 +44,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 					>
 						<GitHub />
 					</a>{" "}
-					<a href="mailto:corliansa@icloud.com">
+					<a href="mailto:me@corliansa.xyz">
 						<Mail />
 					</a>
 				</div>
