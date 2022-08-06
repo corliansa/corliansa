@@ -10,7 +10,8 @@
 		"server": "next build && next start --port=3001"
 	},
 	"dependencies": {
-		"next": "12.1.4",
+		"@sanity/webhook": "^2.0.0",
+		"next": "^12.2.4",
 		"react": "18.0.0",
 		"react-dom": "18.0.0",
 		"react-feather": "^2.0.9",
