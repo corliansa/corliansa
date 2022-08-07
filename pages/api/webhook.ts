@@ -32,16 +32,18 @@ export default async function handler(
 	let result: Record<string, unknown> = {};
 	const body = JSON.parse(rawBody);
 
-	req.method !== "POST" &&
-		res.status(401).json({ message: "Only POST requests are allowed" });
-
-	!is_valid && res.status(401).json({ message: "Invalid signature" });
-
-	body?.sender?.login !== "Corliansa" &&
-		res.status(401).json({ message: "Invalid sender" });
-
-	body?.hook?.events?.includes("push") !== true &&
-		res.status(401).json({ message: "Invalid event" });
+	if (req.method !== "POST") {
+		result.message = "Only POST requests are allowed";
+	}
+	if (!is_valid) {
+		result.message = "Invalid signature";
+	}
+	if (body?.sender?.login !== "Corliansa") {
+		result.message = "Invalid sender";
+	}
+	if (body?.hook?.events?.includes("push") !== true) {
+		result.message = "Invalid event";
+	}
 
 	if (is_valid) {
 		res.revalidate("/index");
@@ -55,12 +57,12 @@ export default async function handler(
 				exec("cd ~/app/TUBot && git pull && pm2 reload TUBot");
 				break;
 			default:
-				res.status(401).json({ message: "Not supported" });
+				result.message = "Not supported.";
 				break;
 		}
 	}
 
-	res.status(200).json(result);
+	res.status(result.message === "Success" ? 200 : 400).json(result);
 }
 
 export const config = {
