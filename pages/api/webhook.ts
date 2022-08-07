@@ -32,6 +32,17 @@ export default async function handler(
 	let extra: Record<string, unknown> = {};
 	const body = JSON.parse(rawBody);
 
+	req.method !== "POST" &&
+		res.status(401).json({ message: "Only POST requests are allowed" });
+
+	!is_valid && res.status(401).json({ message: "Invalid signature" });
+
+	body?.sender?.login !== "Corliansa" &&
+		res.status(401).json({ message: "Invalid sender" });
+
+	body?.hook?.events?.includes("push") !== true &&
+		res.status(401).json({ message: "Invalid event" });
+
 	if (is_valid) {
 		res.revalidate("/index");
 		extra.revalidate = true;
@@ -51,6 +62,7 @@ export default async function handler(
 		}
 	}
 
+	extra.message = "Success";
 	res.status(200).json({ result: is_valid, ...extra });
 }
 
