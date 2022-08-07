@@ -36,18 +36,17 @@ export default async function handler(
 		res.revalidate("/index");
 		extra.revalidate = true;
 		extra.repo = body?.repository?.name;
+		extra.exec = true;
 		switch (body?.repository?.name) {
 			case "corliansa":
 				exec("cd ~/app/corliansa && git pull && pm2 reload corliansa");
-				extra.exec = true;
 				break;
 			case "TUBot":
 				exec("cd ~/app/TUBot && git pull && pm2 reload TUBot");
-				extra.exec = true;
 				break;
 			default:
 				extra.exec = false;
-				extra.repo = "Not supported";
+				extra.message = "Repo not supported.";
 				break;
 		}
 	}
