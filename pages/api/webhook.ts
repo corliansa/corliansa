@@ -55,7 +55,7 @@ export default async function handler(
 				exec("cd ~/app/TUBot && git pull && pm2 reload TUBot");
 				break;
 			default:
-				result.message = "Repo not supported.";
+				res.status(401).json({ message: "Not supported" });
 				break;
 		}
 	}
