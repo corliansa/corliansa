@@ -29,7 +29,7 @@ export default async function handler(
 	const is_valid =
 		signature.length === sign.length &&
 		crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(sign));
-	let extra: Record<string, unknown> = {};
+	let result: Record<string, unknown> = {};
 	const body = JSON.parse(rawBody);
 
 	req.method !== "POST" &&
@@ -45,9 +45,8 @@ export default async function handler(
 
 	if (is_valid) {
 		res.revalidate("/index");
-		extra.revalidate = true;
-		extra.repo = body?.repository?.name;
-		extra.exec = true;
+		result.repo = body?.repository?.name;
+		result.message = "Success";
 		switch (body?.repository?.name) {
 			case "corliansa":
 				exec("cd ~/app/corliansa && git pull && pm2 reload corliansa");
@@ -56,14 +55,12 @@ export default async function handler(
 				exec("cd ~/app/TUBot && git pull && pm2 reload TUBot");
 				break;
 			default:
-				extra.exec = false;
-				extra.message = "Repo not supported.";
+				result.message = "Repo not supported.";
 				break;
 		}
 	}
 
-	extra.message = "Success";
-	res.status(200).json({ result: is_valid, ...extra });
+	res.status(200).json(result);
 }
 
 export const config = {
