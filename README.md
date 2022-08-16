@@ -6,7 +6,7 @@ So far, programming has been a joy for me and I wish to continue to learn about 
 
 - 🌍  I'm based in 🇩🇪 Berlin, Germany
 - 🖥️  See my portfolio at [corliansa.xyz](https://corliansa.xyz)
-- ✉️  You can contact me at [corliansa@icloud.com](mailto:corliansa@icloud.com)
+- ✉️  You can contact me at [me@corliansa.xyz](mailto:me@corliasa.xyz)
 - 🚀  I'm currently working at [Green Got](https://green-got.com)
 
 ### Skills
