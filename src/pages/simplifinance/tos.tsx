@@ -8,7 +8,7 @@ const TOS: NextPage = () => {
       <Head>
         <title>Terms &amp; Conditions</title>
         <meta name="description" content="Simplifinance Terms & Conditions" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main>

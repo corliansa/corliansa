@@ -9,7 +9,7 @@ const Privacy: NextPage = () => {
       <Head>
         <title>Privacy &amp; Policy</title>
         <meta name="description" content="Simplifinance Terms & Conditions" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main>
