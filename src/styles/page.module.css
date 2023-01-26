@@ -3,7 +3,7 @@
 }
 
 .pageContainer main {
-  @apply flex snap-start snap-always flex-col px-16;
+  @apply flex snap-start snap-always flex-col px-7 sm:px-9 md:px-12 lg:px-16;
 }
 
 .pageContainer h1 {
