@@ -15,7 +15,7 @@ export const Base: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="isolate h-screen bg-gray-900 text-gray-300">
+    <div className="isolate min-h-screen bg-gray-900 text-gray-300">
       <div className="px-6 pt-6 lg:px-8">
         <div>
           <nav
