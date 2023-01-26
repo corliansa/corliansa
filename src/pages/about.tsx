@@ -2,7 +2,7 @@ import { Base } from "components";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import { GitHub, Linkedin, Mail } from "react-feather";
+import { Download, GitHub, Linkedin, Mail } from "react-feather";
 
 const About: NextPage = () => {
   return (
@@ -19,6 +19,13 @@ const About: NextPage = () => {
         <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">
           I&apos;m Corliansa Kusumah, a software engineer based in Berlin
         </h1>
+        <a
+          className="mt-6 mr-2 block rounded-md bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-600 sm:inline-block"
+          href="/resume.pdf"
+          download
+        >
+          Resume <Download className="inline" />
+        </a>
         <p className="text-slate-400">
           <br />
           As a computer science student at Technische Universität Berlin, I have
