@@ -1,5 +1,5 @@
 .pageContainer {
-  @apply min-h-screen snap-y bg-slate-800 py-8 text-gray-200;
+  @apply min-h-screen snap-y bg-gray-900 py-8 text-gray-200;
 }
 
 .pageContainer main {
