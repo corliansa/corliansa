@@ -1,0 +1,35 @@
+.pageContainer {
+  @apply min-h-screen snap-y bg-slate-800 py-8 text-gray-200;
+}
+
+.pageContainer main {
+  @apply flex snap-start snap-always flex-col px-16;
+}
+
+.pageContainer h1 {
+  @apply my-8 text-6xl font-bold text-gray-50;
+}
+
+.pageContainer h1 a {
+  @apply no-underline;
+}
+
+.pageContainer h3 {
+  @apply my-4 text-2xl font-bold;
+}
+
+.pageContainer h4 {
+  @apply my-2 text-xl font-semibold;
+}
+
+.pageContainer p {
+  @apply my-1;
+}
+
+.pageContainer strong {
+  @apply my-4 text-2xl font-bold;
+}
+
+.pageContainer a {
+  @apply underline;
+}
