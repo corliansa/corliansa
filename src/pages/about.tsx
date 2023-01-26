@@ -1,6 +1,7 @@
 import { Base } from "components";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { GitHub, Linkedin, Mail } from "react-feather";
 
 const About: NextPage = () => {
@@ -62,7 +63,7 @@ const About: NextPage = () => {
               href: "mailto:me@corliansa.xyz",
             },
           ].map((link) => (
-            <a
+            <Link
               key={link.text}
               href={link.href}
               target="_blank"
@@ -70,7 +71,7 @@ const About: NextPage = () => {
               className="mt-2 mr-2 block rounded-md bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-600 sm:inline-block"
             >
               {link.icon} {link.text}
-            </a>
+            </Link>
           ))}
         </div>
       </Base>

@@ -1,6 +1,7 @@
 import { Base } from "components";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { GitHub, Linkedin, Mail } from "react-feather";
 
 const Home: NextPage = () => {
@@ -27,23 +28,23 @@ const Home: NextPage = () => {
           use my skills to create a positive impact on the world.
         </p>
         <div className="flex gap-2 sm:justify-center">
-          <a
+          <Link
             href="https://linkedin.com/in/corliansa/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Linkedin />
-          </a>{" "}
-          <a
+          </Link>{" "}
+          <Link
             href="https://github.com/Corliansa"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GitHub />
-          </a>{" "}
-          <a href="mailto:me@corliansa.xyz">
+          </Link>{" "}
+          <Link href="mailto:me@corliansa.xyz">
             <Mail />
-          </a>
+          </Link>
         </div>
       </Base>
     </>

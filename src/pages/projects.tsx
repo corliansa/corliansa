@@ -1,6 +1,7 @@
 import { Base } from "components";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const projects = [
   {
@@ -47,7 +48,7 @@ const Projects: NextPage = () => {
         <ul className="mt-6">
           {projects.map((use) => (
             <li key={use.name}>
-              <a
+              <Link
                 href={use.link ?? "#"}
                 target={use.link ? "_blank" : "_self"}
                 rel="noreferrer"
@@ -57,7 +58,7 @@ const Projects: NextPage = () => {
                 </h2>
                 <span className="text-slate-400">{use.list.join(", ")}</span>
                 <p className="mt-2 text-slate-300">{use.desc}</p>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
