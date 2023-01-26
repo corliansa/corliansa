@@ -14,11 +14,12 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  async rewrites() {
+  async redirects() {
     return [
       {
         source: "/blog/:blog*",
         destination: "https://blog.corliansa.xyz/:blog*",
+        permanent: true,
       },
     ];
   },
