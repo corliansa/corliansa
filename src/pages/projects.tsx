@@ -43,7 +43,6 @@ const Projects: NextPage = () => {
               <Link
                 href={use.link ?? "#"}
                 target={use.link ? "_blank" : "_self"}
-                rel="noreferrer"
               >
                 <h2 className="my-2 text-xl font-semibold tracking-tight underline">
                   {use.name}

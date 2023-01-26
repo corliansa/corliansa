@@ -20,18 +20,10 @@ const Home: NextPage = () => {
           use my skills to create a positive impact on the world.
         </p>
         <div className="flex gap-2 sm:justify-center">
-          <Link
-            href="https://linkedin.com/in/corliansa/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="https://linkedin.com/in/corliansa/" target="_blank">
             <Linkedin />
           </Link>{" "}
-          <Link
-            href="https://github.com/Corliansa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="https://github.com/Corliansa" target="_blank">
             <GitHub />
           </Link>{" "}
           <Link href="mailto:me@corliansa.xyz">

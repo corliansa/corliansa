@@ -11,13 +11,14 @@ const About: NextPage = () => {
         <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">
           I&apos;m Corliansa Kusumah, a software engineer based in Berlin
         </h1>
-        <a
+        <Link
           className="mt-6 mr-2 block rounded-md bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-600 sm:inline-block"
           href="/resume.pdf"
-          download
+          target="_blank"
+          download="Corliansa Kusumah - Resume.pdf"
         >
           Resume <Download className="inline" />
-        </a>
+        </Link>
         <p className="text-slate-400">
           <br />
           As a computer science student at Technische Universität Berlin, I have
@@ -66,7 +67,6 @@ const About: NextPage = () => {
               key={link.text}
               href={link.href}
               target="_blank"
-              rel="noopener noreferrer"
               className="mt-2 mr-2 block rounded-md bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-600 sm:inline-block"
             >
               {link.icon} {link.text}
