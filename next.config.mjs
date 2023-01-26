@@ -14,5 +14,13 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  async rewrites() {
+    return [
+      {
+        source: "/blog/:blog*",
+        destination: "https://blog.corliansa.xyz/:blog*",
+      },
+    ];
+  },
 };
 export default config;
