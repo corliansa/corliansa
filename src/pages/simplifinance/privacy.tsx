@@ -1,15 +1,14 @@
+import { Head } from "components";
 import type { NextPage } from "next";
-import Head from "next/head";
 import styles from "styles/page.module.css";
 
 const Privacy: NextPage = () => {
   return (
     <div className={styles.pageContainer}>
-      <Head>
-        <title>Simplifinance Privacy &amp; Policy</title>
-        <meta name="description" content="Simplifinance Privacy & Policy" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+      <Head
+        title="Simplifinance Privacy & Policy"
+        desc="Simplifinance Privacy & Policy"
+      />
 
       <main>
         <h1>Simplifinance</h1>

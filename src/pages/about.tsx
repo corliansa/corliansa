@@ -1,20 +1,12 @@
-import { Base } from "components";
+import { Base, Head } from "components";
 import { type NextPage } from "next";
-import Head from "next/head";
 import Link from "next/link";
 import { Download, GitHub, Linkedin, Mail } from "react-feather";
 
 const About: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Corliansa Kusumah | About</title>
-        <meta
-          name="description"
-          content="Corliansa Kusumah is a computer science student at TU Berlin. He is currently working in Green Got, a green neobank."
-        />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+      <Head title="Corliansa Kusumah | About" />
       <Base>
         <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">
           I&apos;m Corliansa Kusumah, a software engineer based in Berlin

@@ -1,6 +1,5 @@
-import { Base } from "components";
+import { Base, Head } from "components";
 import { type NextPage } from "next";
-import Head from "next/head";
 import Link from "next/link";
 
 const projects = [
@@ -33,14 +32,7 @@ const projects = [
 const Projects: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Corliansa Kusumah | Projects</title>
-        <meta
-          name="description"
-          content="Corliansa Kusumah is a computer science student at TU Berlin. He is currently working in Green Got, a green neobank."
-        />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+      <Head title="Corliansa Kusumah | Projects" />
       <Base>
         <h1 className="text-5xl font-medium tracking-tight sm:text-7xl">
           Projects

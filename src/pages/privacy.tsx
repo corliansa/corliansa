@@ -1,16 +1,12 @@
+import { Head } from "components";
 import type { NextPage } from "next";
-import Head from "next/head";
 import Link from "next/link";
 import styles from "styles/page.module.css";
 
 const Privacy: NextPage = () => {
   return (
     <div className={styles.pageContainer}>
-      <Head>
-        <title>Privacy &amp; Policy</title>
-        <meta name="description" content="Simplifinance Terms & Conditions" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+      <Head title="Privacy & Policy" />
 
       <main>
         <h1>
@@ -18,10 +14,10 @@ const Privacy: NextPage = () => {
         </h1>
 
         <p>
-          Your privacy is important to us. It is Corliansa Kusumah |
-          Portfolio&apos;s policy to respect your privacy and comply with any
-          applicable law and regulation regarding any personal information we
-          may collect about you, including across our website,{" "}
+          Your privacy is important to us. It is Corliansa Kusumah&apos;s policy
+          to respect your privacy and comply with any applicable law and
+          regulation regarding any personal information we may collect about
+          you, including across our website,{" "}
           <Link href="https://corliansa.xyz">https://corliansa.xyz</Link>, and
           other sites we own and operate.{" "}
         </p>

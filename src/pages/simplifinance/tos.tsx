@@ -1,15 +1,14 @@
+import { Head } from "components";
 import type { NextPage } from "next";
-import Head from "next/head";
 import styles from "styles/page.module.css";
 
 const TOS: NextPage = () => {
   return (
     <div className={styles.pageContainer}>
-      <Head>
-        <title>Terms &amp; Conditions</title>
-        <meta name="description" content="Simplifinance Terms & Conditions" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+      <Head
+        title="Terms & Conditions"
+        desc="Simplifinance Terms & Conditions"
+      />
 
       <main>
         <h1>Simplifinance</h1>
