@@ -2,13 +2,15 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
-COPY package.json yarn.lock ./
+RUN yarn set version berry
+
+COPY .yarn ./.yarn
+
+COPY package.json yarn.lock .yarnrc.yml ./
 
 RUN yarn install --immutable --check-cache
 
 COPY ./ ./
-
-RUN yarn
 
 RUN yarn build
 
@@ -18,4 +20,4 @@ USER node
 
 EXPOSE 3000
 
-CMD ["pm2-runtime", "start", "yarn", "--", "start"]
+CMD ["pm2-runtime", "start", "yarn", "--max-memory-restart", "300M", "--", "start"]
