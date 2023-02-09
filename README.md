@@ -2,7 +2,7 @@
 
 ## Software Engineer
 
-So far, programming has been a joy for me and I wish to continue to learn about it even more.
+I'm Corliansa, a CS student at TU Berlin with a strong foundation in both theoretical and practical knowledge of computer science. I'm passionate about using technology to solve real-world problems, particularly at the intersection of finance and technology. I currently work at a green neobank called Green Got and am excited to use my skills to create a positive impact on the world.
 
 - 🌍  I'm based in 🇩🇪 Berlin, Germany
 - 🖥️  See my portfolio at [corliansa.xyz](https://corliansa.xyz)
