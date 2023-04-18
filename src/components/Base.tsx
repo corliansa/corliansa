@@ -15,7 +15,7 @@ export const Base: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="isolate min-h-screen bg-gray-900 text-gray-300">
+    <div className="isolate min-h-screen bg-neutral-900 text-gray-300">
       <div className="px-6 pt-6 lg:px-8">
         <div>
           <nav
@@ -51,7 +51,7 @@ export const Base: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             </div>
           </nav>
           <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-            <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-gray-900 px-6 py-6 lg:hidden">
+            <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-neutral-900 px-6 py-6 lg:hidden">
               <div className="flex h-9 items-center justify-between">
                 <div className="flex">
                   <Link href="/" className="-m-1.5 p-1.5">
