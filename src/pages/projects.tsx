@@ -4,6 +4,12 @@ import Link from "next/link";
 
 const projects = [
   {
+    name: "Resumize.pro",
+    list: ["Typescript", "React", "Next.js", "OpenAI API", "Stripe"],
+    desc: "AI powered cover letter and resume generator",
+    link: "https://resumize.pro",
+  },
+  {
     name: "Simplinotes",
     list: ["Typescript", "React", "Electron", "Vite"],
     desc: "A simple note taking app with support for Markdown and KaTeX",
