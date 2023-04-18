@@ -1,16 +1,13 @@
-export const Logo: React.FC<React.SVGAttributes<SVGElement>> = ({
-  width = 50,
-  color = "#EEEEEE",
-  className,
-  ...rest
-}) => (
+export const Logo: React.FC<
+  React.SVGAttributes<SVGElement> & { size?: number }
+> = ({ size = 50, color = "#EEEEEE", className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={width}
+    width={size}
     zoomAndPan="magnify"
     viewBox="0 0 375 374.999991"
-    height="500"
+    height={size}
     preserveAspectRatio="xMidYMid meet"
     version="1.0"
     className={className}
