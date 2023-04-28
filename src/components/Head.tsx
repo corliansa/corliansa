@@ -10,8 +10,8 @@ export const Head = ({
   <NextHead>
     <title>{title}</title>
     <meta name="description" content={desc} />
-    <meta name="theme-color" content="#111827" />
+    <meta name="theme-color" content="#171717" />
     <link rel="icon" href="/favicon.svg" />
-    <link rel="mask-icon" href="/logo.svg" color="#111827" />
+    <link rel="mask-icon" href="/logo.svg" color="#171717" />
   </NextHead>
 );
