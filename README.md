@@ -2,12 +2,11 @@
 
 ## Software Engineer
 
-I'm Corliansa, a CS student at TU Berlin with a strong foundation in both theoretical and practical knowledge of computer science. I'm passionate about using technology to solve real-world problems, particularly at the intersection of finance and technology. I currently work at a green neobank called Green Got and am excited to use my skills to create a positive impact on the world.
-
+I'm Corliansa, a graduate of [Technische Universität Berlin](https://tu.berlin/) in Computer Science. I'm passionate about using technology to solve real-world problems, particularly at the intersection of finance and technology. I am currently working at [Coinbase](https://coinbase.com).
 - 🌍  I'm based in 🇩🇪 Berlin, Germany
 - 🖥️  See my portfolio at [corliansa.xyz](https://corliansa.xyz)
 - ✉️  You can contact me at [me@corliansa.xyz](mailto:me@corliasa.xyz)
-- 🚀  I'm currently working at [Green Got](https://green-got.com)
+- 🚀  I'm currently working at [Coinbase](https://coinbase.com)
 
 ### Skills
 
@@ -16,10 +15,6 @@ I'm Corliansa, a CS student at TU Berlin with a strong foundation in both theore
 ### Socials
 
 <p align="left"> <a href="https://www.github.com/corliansa" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/corliansa" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
-
-### Support Me
-
-<a href="https://www.buymeacoffee.com/corliansa"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" /></a>
 
 
 <!--
