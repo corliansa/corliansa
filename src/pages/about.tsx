@@ -20,28 +20,16 @@ const About: NextPage = () => {
         </Link>
         <p className="text-slate-400">
           <br />
-          As a computer science student at Technische Universität Berlin, I have
-          a strong foundation in both theoretical and practical knowledge of
-          computer science. I am passionate about using technology to solve
-          real-world problems, and am particularly interested in the
-          intersection of finance and technology.
+          As a graduate of Technische Universität Berlin with a degree in Computer Science, I have a strong foundation in both theoretical and practical knowledge of computer science. I am passionate about using technology to solve real-world problems, and am particularly interested in the intersection of finance and technology.
           <br />
           <br />
-          Currently, I am working at Green Got, a green neobank, where I have
-          the opportunity to contribute to the development of a more sustainable
-          financial system. I am excited to use my skills to create a positive
-          impact on the world through technology.
+          Currently, I am working at Coinbase. I am excited to use my skills to create a positive impact on the world through technology.
           <br />
           <br />
-          In my spare time, I enjoy staying up-to-date with the latest
-          developments in the field, and am always looking for ways to expand my
-          knowledge and skills. I am a strong team player and am always willing
-          to collaborate and learn from others.
+          In my spare time, I enjoy staying up-to-date with the latest developments in the field, and am always looking for ways to expand my knowledge and skills. I am a strong team player and am always willing to collaborate and learn from others.
           <br />
           <br />
-          I am excited to connect with other professionals in the field and
-          explore opportunities to make a difference through technology. Feel
-          free to reach out to me on LinkedIn!
+          I am excited to connect with other professionals in the field and explore opportunities to make a difference through technology. Feel free to reach out to me on LinkedIn!
           <br />
         </p>
         <div className="mt-6">
