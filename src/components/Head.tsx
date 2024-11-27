@@ -2,7 +2,7 @@ import NextHead from "next/head";
 
 export const Head = ({
   title,
-  desc = "Corliansa Kusumah is a computer science student at TU Berlin. He is currently working in Green Got, a green neobank.",
+  desc = "Corliansa Kusumah is a computer science graduate from TU Berlin. He is currently working at Coinbase.",
 }: {
   title: string;
   desc?: string;
