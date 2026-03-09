@@ -2,11 +2,11 @@
 
 ## Software Engineer
 
-I'm Corliansa, a graduate of [Technische Universität Berlin](https://tu.berlin/) in Computer Science. I'm passionate about using technology to solve real-world problems, particularly at the intersection of finance and technology. I am currently working at [Coinbase](https://coinbase.com).
+I'm Corliansa, a graduate of [Technische Universität Berlin](https://tu.berlin/) in Computer Science. I'm passionate about using technology to solve real-world problems, particularly at the intersection of finance and technology. I am currently working at [telli](https://telli.com).
 - 🌍  I'm based in 🇩🇪 Berlin, Germany
 - 🖥️  See my portfolio at [corliansa.xyz](https://corliansa.xyz)
 - ✉️  You can contact me at [me@corliansa.xyz](mailto:me@corliasa.xyz)
-- 🚀  I'm currently working at [Coinbase](https://coinbase.com)
+- 🚀  I'm currently working at [telli](https://telli.com)
 
 ### Skills
 
