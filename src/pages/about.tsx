@@ -20,10 +20,10 @@ const About: NextPage = () => {
         </Link>
         <p className="text-slate-400">
           <br />
-          As a computer science graduate from Technische Universität Berli, I have a strong foundation in both theoretical and practical knowledge of computer science. I am passionate about using technology to solve real-world problems, and am particularly interested in the intersection of finance and technology.
+          As a computer science graduate from Technische Universität Berlin, I have a strong foundation in both theoretical and practical knowledge of computer science.
           <br />
           <br />
-          Currently, I am working at Coinbase. I am excited to use my skills to create a positive impact on the world through technology.
+          Currently, I am working at telli. I am excited to use my skills to create a positive impact on the world through technology.
           <br />
           <br />
           In my spare time, I enjoy staying up-to-date with the latest developments in the field, and am always looking for ways to expand my knowledge and skills. I am a strong team player and am always willing to collaborate and learn from others.
