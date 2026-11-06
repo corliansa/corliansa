@@ -6,192 +6,112 @@ import styles from "styles/page.module.css";
 const Privacy: NextPage = () => {
   return (
     <div className={styles.pageContainer}>
-      <Head title="Privacy & Policy" />
+      <Head
+        title="Privacy Policy"
+        desc="How corliansa.xyz handles visitor data."
+      />
 
       <main>
         <h1>
-          <Link href="/">{"◀ "}</Link>Privacy & Policy
+          <Link href="/" aria-label="Back to the home page">
+            {"◀ "}
+          </Link>
+          Privacy Policy
         </h1>
 
+        <p>Last reviewed on 6 November 2026.</p>
         <p>
-          Your privacy is important to us. It is Corliansa Kusumah&apos;s policy
-          to respect your privacy and comply with any applicable law and
-          regulation regarding any personal information we may collect about
-          you, including across our website,{" "}
-          <Link href="https://corliansa.xyz">https://corliansa.xyz</Link>, and
-          other sites we own and operate.{" "}
+          This notice covers visits to corliansa.xyz. Corliansa Kusumah is the
+          controller for this site and can be reached at{" "}
+          <a href="mailto:me@corliansa.xyz">me@corliansa.xyz</a>.
+        </p>
+
+        <h3>Hosting and security</h3>
+        <p>
+          Vercel hosts the site. Cloudflare sits in front of it and helps
+          deliver pages and protect the site from abuse. These services handle
+          technical request data such as your IP address, browser information,
+          the requested page and the time of the request. They may log request
+          and error information for security and troubleshooting. Cloudflare can
+          also receive reports of failed requests from browsers that support
+          network error reporting.
         </p>
         <p>
-          This policy is effective as of 14 May 2022 and was last updated on 14
-          May 2022.{" "}
+          I use this processing to deliver the pages you request, keep the site
+          available and investigate errors and abuse. The legal basis is my
+          legitimate interest in operating and securing the site under Article
+          6(1)(f) GDPR. Log retention depends on the provider settings and how
+          long the records are needed to investigate errors or security
+          incidents.
         </p>
-        <h3>Information We Collect</h3>
+
+        <h3>Website analytics</h3>
         <p>
-          Information we collect includes both information you knowingly and
-          actively provide us when using or participating in any of our services
-          and promotions, and any information automatically sent by your devices
-          in the course of accessing our products and services.{" "}
-        </p>
-        <h4>Log Data</h4>
-        <p>
-          When you visit our website, our servers may automatically log the
-          standard data provided by your web browser. It may include your
-          device&apos;s Internet Protocol (IP) address, your browser type and
-          version, the pages you visit, the time and date of your visit, the
-          time spent on each page, other details about your visit, and technical
-          details that occur in conjunction with any errors you may encounter.{" "}
-        </p>
-        <p>
-          Please be aware that while this information may not be personally
-          identifying by itself, it may be possible to combine it with other
-          data to personally identify individual persons.{" "}
-        </p>
-        <h4>Collection and Use of Information</h4>
-        <p>
-          We may collect personal information from you when you do any of the
-          following on our website:{" "}
-        </p>
-        <ul>
-          <li>Use a mobile device or web browser to access our content</li>
-          <li>
-            Contact us via email, social media, or on any similar technologies
-          </li>
-          <li>When you mention us on social media</li>
-        </ul>
-        <p>
-          We may collect, hold, use, and disclose information for the following
-          purposes, and personal information will not be further processed in a
-          manner that is incompatible with these purposes:{" "}
+          The site loads Cloudflare Web Analytics to measure page performance.
+          Its script can send the page path, referrer and browser performance
+          measurements, such as page load times, to Cloudflare. Cloudflare says
+          it discards the IP address received with these reports at its nearest
+          data center. The analytics script does not use cookies or browser
+          storage. To the extent this involves personal data, the legal basis is
+          my legitimate interest in diagnosing and improving site performance
+          under Article 6(1)(f) GDPR.
         </p>
         <p>
-          Please be aware that we may combine information we collect about you
-          with general information or research data we receive from other
-          trusted sources.{" "}
+          The site is also configured to request a Plausible Analytics script
+          from plausible.dlx.pw. That hostname did not resolve when I reviewed
+          this notice. I could not verify any Plausible analytics collection.
         </p>
-        <h4>Security of Your Personal Information</h4>
+
+        <h3>Cookies and external links</h3>
         <p>
-          When we collect and process personal information, and while we retain
-          this information, we will protect it within commercially acceptable
-          means to prevent loss and theft, as well as unauthorized access,
-          disclosure, copying, use, or modification.{" "}
-        </p>
-        <p>
-          Although we will do our best to protect the personal information you
-          provide to us, we advise that no method of electronic transmission or
-          storage is 100% secure, and no one can guarantee absolute data
-          security. We will comply with laws applicable to us in respect of any
-          data breach.{" "}
+          The portfolio itself does not set analytics cookies. Cloudflare may
+          set security cookies if it needs to verify your browser or protect the
+          site against abuse.
         </p>
         <p>
-          You are responsible for selecting any password and its overall
-          security strength, ensuring the security of your own information
-          within the bounds of our services.{" "}
+          The site links to services such as GitHub, LinkedIn and the blog.
+          These links take you to separate sites whose privacy notices apply
+          when you visit them.
         </p>
-        <h4>How Long We Keep Your Personal Information</h4>
+
+        <h3>When you email me</h3>
         <p>
-          We keep your personal information only for as long as we need to. This
-          time period may depend on what we are using your information for, in
-          accordance with this privacy policy. If your personal information is
-          no longer required, we will delete it or make it anonymous by removing
-          all details that identify you.{" "}
+          If you email me, I use your email address and the information you
+          include to reply and handle your request. My email provider processes
+          the message for delivery and storage. The legal basis is my legitimate
+          interest in responding under Article 6(1)(f) GDPR. I keep
+          correspondence for as long as needed to handle the request and any
+          follow-up, or longer where the law requires it.
         </p>
+
+        <h3>International processing</h3>
         <p>
-          However, if necessary, we may retain your personal information for our
-          compliance with a legal, accounting, or reporting obligation or for
-          archiving purposes in the public interest, scientific, or historical
-          research purposes or statistical purposes.{" "}
+          Vercel and Cloudflare may process request data outside the European
+          Economic Area. Their data processing terms explain their transfer
+          safeguards, including the European Commission&apos;s standard
+          contractual clauses where applicable. See the{" "}
+          <a href="https://vercel.com/legal/dpa">
+            Vercel data processing terms
+          </a>{" "}
+          and the{" "}
+          <a href="https://www.cloudflare.com/cloudflare-customer-dpa/">
+            Cloudflare data processing terms
+          </a>
+          . You can email me to ask which safeguards apply and request a copy.
         </p>
-        <h3>Children&apos;s Privacy</h3>
+
+        <h3>Your rights</h3>
         <p>
-          We do not aim any of our products or services directly at children
-          under the age of 13, and we do not knowingly collect personal
-          information about children under 13.{" "}
-        </p>
-        <h3>International Transfers of Personal Information</h3>
-        <p>
-          The personal information we collect is stored and/or processed where
-          we or our partners, affiliates, and third-party providers maintain
-          facilities. Please be aware that the locations to which we store,
-          process, or transfer your personal information may not have the same
-          data protection laws as the country in which you initially provided
-          the information. If we transfer your personal information to third
-          parties in other countries: (i) we will perform those transfers in
-          accordance with the requirements of applicable law; and (ii) we will
-          protect the transferred personal information in accordance with this
-          privacy policy.{" "}
-        </p>
-        <h3>Your Rights and Controlling Your Personal Information</h3>
-        <p>
-          You always retain the right to withhold personal information from us,
-          with the understanding that your experience of our website may be
-          affected. We will not discriminate against you for exercising any of
-          your rights over your personal information. If you do provide us with
-          personal information you understand that we will collect, hold, use
-          and disclose it in accordance with this privacy policy. You retain the
-          right to request details of any personal information we hold about
-          you.{" "}
-        </p>
-        <p>
-          If we receive personal information about you from a third party, we
-          will protect it as set out in this privacy policy. If you are a third
-          party providing personal information about somebody else, you
-          represent and warrant that you have such person&apos;s consent to
-          provide the personal information to us.{" "}
-        </p>
-        <p>
-          If you have previously agreed to us using your personal information
-          for direct marketing purposes, you may change your mind at any time.
-          We will provide you with the ability to unsubscribe from our
-          email-database or opt out of communications. Please be aware we may
-          need to request specific information from you to help us confirm your
-          identity.{" "}
-        </p>
-        <p>
-          If you believe that any information we hold about you is inaccurate,
-          out of date, incomplete, irrelevant, or misleading, please contact us
-          using the details provided in this privacy policy. We will take
-          reasonable steps to correct any information found to be inaccurate,
-          incomplete, misleading, or out of date.{" "}
-        </p>
-        <p>
-          If you believe that we have breached a relevant data protection law
-          and wish to make a complaint, please contact us using the details
-          below and provide us with full details of the alleged breach. We will
-          promptly investigate your complaint and respond to you, in writing,
-          setting out the outcome of our investigation and the steps we will
-          take to deal with your complaint. You also have the right to contact a
-          regulatory body or data protection authority in relation to your
-          complaint.{" "}
-        </p>
-        <h3>Limits of Our Policy</h3>
-        <p>
-          Our website may link to external sites that are not operated by us.
-          Please be aware that we have no control over the content and policies
-          of those sites, and cannot accept responsibility or liability for
-          their respective privacy practices.{" "}
-        </p>
-        <h3>Changes to This Policy</h3>
-        <p>
-          At our discretion, we may change our privacy policy to reflect updates
-          to our business processes, current acceptable practices, or
-          legislative or regulatory changes. If we decide to change this privacy
-          policy, we will post the changes here at the same link by which you
-          are accessing this privacy policy.{" "}
-        </p>
-        <p>
-          If required by law, we will get your permission or give you the
-          opportunity to opt in to or opt out of, as applicable, any new uses of
-          your personal information.{" "}
-        </p>
-        <h3>Contact Us</h3>
-        <p>
-          For any questions or concerns regarding your privacy, you may contact
-          us using the following details:{" "}
-        </p>
-        <p>
-          Corliansa Kusumah
-          <br />
-          me@corliansa.xyz{" "}
+          Depending on the circumstances, you can request access, correction,
+          deletion, restriction or portability of your personal data. You can
+          also object to processing based on legitimate interests. To exercise
+          these rights, email{" "}
+          <a href="mailto:me@corliansa.xyz">me@corliansa.xyz</a>. You can also
+          complain to a data protection authority, such as the{" "}
+          <a href="https://www.datenschutz-berlin.de/buergerinnen-und-buerger/beschwerde/">
+            Berlin data protection authority
+          </a>
+          .
         </p>
       </main>
     </div>
